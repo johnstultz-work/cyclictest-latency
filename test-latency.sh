@@ -45,10 +45,8 @@ function start_cyclictest {
 }
 
 function start_iperf {
-	iperf -s -t 5 > /dev/null &
-	iperf -c localhost -u -b 10g -t $TEST_TIME_SEC -i 1 -P $NUM_PROC > /dev/null
-#	iperf -c iperf.he.net -u -b 10g -t $TEST_TIME_SEC -i 1 -P $NUM_PROC > /dev/null
-#	iperf -c iperf.he.net -u -b 100M -t $TEST_TIME_SEC -i 1 -P 2 > /dev/null
+	iperf -s -t $TEST_TIME_SEC > /dev/null &
+	iperf -c localhost -t $TEST_TIME_SEC -i 1 -P $NUM_PROC > /dev/null
 	echo "iperf done"
 }
 
