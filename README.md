@@ -3,6 +3,8 @@
 This project provides helper script for running cyclictest
 with background load to test for system latencies
 
+NOTE: This test expects iperf to be installed and binaries for [cyclictest](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/rt-tests)  and [speedtest-cli](https://github.com/sivel/speedtest-cli) to be in the directory from where its run.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
